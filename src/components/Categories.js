@@ -19,10 +19,8 @@ export default function Catagories(props) {
     async function fetchapi() {
       //spinner on
       setLoad({ spin: false, changeCatagory: true });
-      {/* 03e886219fc94e27a2d336fa7320bece */ }
-      {/* e3e21440777145f293a0d36ae2970932 */ }
       //api declare
-      let url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=e3e21440777145f293a0d36ae2970932`
+      let url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=`//add api key
       //fetch the data from api
       let data = await fetch(url);
       //jsonify
